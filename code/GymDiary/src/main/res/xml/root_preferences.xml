@@ -1,0 +1,110 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Backup: Local Storage">
+
+        <Preference
+            app:key="importcsv"
+            app:summary="Nhập bản sao lưu trước đó từ bộ nhớ điện thoại"
+            app:title="Import"
+            app:useSimpleSummaryProvider="false" />
+
+        <Preference
+            app:key="exportcsv"
+            app:summary="Xuất sang bộ nhớ điện thoại"
+            app:title="Export"
+            app:useSimpleSummaryProvider="false" />
+
+        <Preference
+            app:key="deletedata"
+            app:summary="Xóa tất cả dữ liệu tập luyện của ứng dụng"
+            app:title="Clear Data"
+            app:useSimpleSummaryProvider="false" />
+
+    <PreferenceCategory app:title="Backup: Webdav">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="togglewebdav"
+            android:title="Sao lưu" />
+        <Preference
+            app:key="importwebdav"
+            app:summary="Nhập bản sao lưu trước đó từ máy chủ"
+            app:title="Import"
+            app:useSimpleSummaryProvider="false" />
+
+        <Preference
+            app:key="exportwebdav"
+            app:summary="Xuất sang máy chủ webdav"
+            app:title="Export"
+            app:useSimpleSummaryProvider="false" />
+        <EditTextPreference
+            android:key="webdavurl"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Url"
+            app:summary="http://example.com" />
+        <EditTextPreference
+            android:key="webdavusername"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Username"
+            app:summary="user" />
+        <EditTextPreference
+            android:key="webdavpassword"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Password" />
+
+        <Preference
+            android:key="webdavcheckconnection"
+            android:summary="Kiểm tra cấu hình webdav"
+            android:title="Check Connection" />
+
+    </PreferenceCategory>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="General">
+
+<!--        <Preference-->
+<!--            app:key="theme"-->
+<!--            app:summary="Light"-->
+<!--            app:title="Theme"-->
+<!--            app:useSimpleSummaryProvider="false" />-->
+
+        <Preference
+            app:key="github"
+            app:summary="Contributions are always welcome"
+            app:title="Source Code"
+            app:useSimpleSummaryProvider="false" />
+
+<!--        <Preference-->
+<!--            app:key="version"-->
+<!--            app:summary="0.0.1"-->
+<!--            app:title="Version"-->
+<!--            app:useSimpleSummaryProvider="false" />-->
+
+        <Preference
+            app:key="donate"
+            app:summary="Nếu bạn thích ứng dụng này, hãy cân nhắc quyên góp"
+            app:title="Donate"
+            app:useSimpleSummaryProvider="false" />
+
+
+        <Preference
+            app:key="licence"
+            app:summary="Giấy phép Công cộng GNU, phiên bản 3"
+            app:title="Licence"
+            app:useSimpleSummaryProvider="false" />
+
+<!--        <Preference-->
+<!--            app:key="help"-->
+<!--            app:summary=""-->
+<!--            app:title="Help"-->
+<!--            app:useSimpleSummaryProvider="false" />-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
